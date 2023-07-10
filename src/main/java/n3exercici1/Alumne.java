@@ -46,7 +46,7 @@ public class Alumne {
 
 	@Override
 	public String toString() {
-		return "Alumne [nom=" + nom + ", edat=" + edat + ", curs=" + curs + ", nota=" + nota + "]";
+		return "Alumne " + nom + "  " + edat + ", curs=" + curs + ", nota=" + nota;
 	}
 	
 	

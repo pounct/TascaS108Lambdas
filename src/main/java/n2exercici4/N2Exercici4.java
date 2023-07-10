@@ -48,15 +48,6 @@ public class N2Exercici4 {
 		.forEach(System.out::println);
 		System.out.println("\n\n");
 
-		// .forEach(nc -> nc+"");
-
-		// nc.chars().mapToObj(c -> (char) c).map(c ->
-		// c=='a'?'4':c)).collect(Collectors.joining()
-
-		//// nc.toString().contains("a") ? ((String) nc).replace(0, 0):nc.toString());
-		// .map(ch-> ch='a'?'4':'a'));
-		// ("a", "4") : nc.toString());
-
 	}
 
 }

@@ -7,7 +7,7 @@ public class N3Exercici1 {
 
 	public static void main(String[] args) {
 
-		Byte nombreAlumnes = 10;
+		//Byte nombreAlumnes = 10;
 
 		List<Alumne> alumnes = new ArrayList<Alumne>();
 		alumnes.add(new Alumne("alex", 21, "JAVA", 6));
@@ -24,11 +24,18 @@ public class N3Exercici1 {
 		// System.out.println(Alumne::toString());
 		alumnes.forEach(al -> System.out.println(al));
 
+		
+		System.out.println("\n\n");
+		
+		
 		// Mostra per pantalla el nom i l’edat de cada alumne/a.
 		alumnes.forEach(al -> {
 			System.out.print(al.getNom() + "  ");
 			System.out.println(al.getEdat());
 		});
+		
+		System.out.println("\n\n");
+		
 
 		// Filtra la llista per tots els alumnes que el seu nom comença per ‘a’. Assigna
 		// a aquests alumnes a una altra llista i mostra per pantalla la nova llista
@@ -39,17 +46,25 @@ public class N3Exercici1 {
 				.forEach(al -> alumnesResult.add(al));
 
 		alumnesResult.forEach(System.out::println);
+		
+		System.out.println("\n\n");
 
 		// Filtra i mostra per pantalla els alumnes que tenen una nota de 5 o superior.
 		alumnes.stream().filter(alumne -> alumne.getNota() >= 5).forEach(System.out::println);
 
+		System.out.println("\n\n");
+		
 		// Filtra i mostra per pantalla els alumnes que tenen un nota de 5 o més, i que
 		// no són de PHP.
 		alumnes.stream().filter(alumne -> alumne.getNota() >= 5 && !alumne.getCurs().equals("PHP"))
 				.forEach(System.out::println);
 
+		
+		System.out.println("\n\n");
+		
+		
 		// Mostra tots els alumnes que fan JAVA i són majors d’edat.
-		alumnes.stream().filter(alumne -> alumne.getCurs().equals("JAVA") && alumne.getEdat() > 18)
+		alumnes.stream().filter(alumne -> alumne.getCurs().equals("JAVA") && alumne.getEdat() >= 18)
 				.forEach(System.out::println);
 
 	}

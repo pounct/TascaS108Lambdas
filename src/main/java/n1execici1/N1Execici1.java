@@ -11,7 +11,9 @@ public class N1Execici1 {
 		String[] stringArray = { "A", "Bo", "C", "oD" };
 		List<String> stringList = new ArrayList<>(Arrays.asList(stringArray));
 
-		stringList.stream().filter((s) -> (s.contains("o"))).forEach(s -> System.out.println(s));
+		stringList.stream()
+		.filter((s) -> (s.contains("o")))
+		.forEach(s -> System.out.println(s));
 
 	}
 
